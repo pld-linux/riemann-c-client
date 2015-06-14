@@ -6,7 +6,7 @@ Summary:	Riemann client library
 Summary(pl.UTF-8):	Biblioteka kliencka Riemann
 Name:		riemann-c-client
 Version:	1.8.0
-Release:	1
+Release:	2
 License:	LGPL v3+
 Group:		Libraries
 Source0:	https://github.com/algernon/riemann-c-client/archive/%{name}-%{version}.tar.gz
@@ -68,8 +68,11 @@ Statyczna biblioteka riemann-client.
 %{__autoheader}
 %{__automake}
 %configure \
+	--disable-silent-rules \
 	%{!?with_static_libs:--disable-static}
-%{__make}
+
+# -j1: compile/generation race on riemann/proto/riemann.pb-c.h file
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
