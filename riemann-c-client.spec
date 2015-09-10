@@ -1,12 +1,12 @@
 #
 # Conditional build:
 %bcond_without	static_libs	# don't build static libraries
-#
+
 Summary:	Riemann client library
 Summary(pl.UTF-8):	Biblioteka kliencka Riemann
 Name:		riemann-c-client
 Version:	1.8.0
-Release:	2
+Release:	3
 License:	LGPL v3+
 Group:		Libraries
 Source0:	https://github.com/algernon/riemann-c-client/archive/%{name}-%{version}.tar.gz
@@ -39,6 +39,7 @@ Summary:	Header files for riemann-client library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki riemann-client
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	protobuf-c-devel
 
 %description devel
 Header files for riemann-client library.
