@@ -6,7 +6,7 @@ Summary:	Riemann client library
 Summary(pl.UTF-8):	Biblioteka kliencka Riemann
 Name:		riemann-c-client
 Version:	1.8.0
-Release:	3
+Release:	4
 License:	LGPL v3+
 Group:		Libraries
 Source0:	https://github.com/algernon/riemann-c-client/archive/%{name}-%{version}.tar.gz
