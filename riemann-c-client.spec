@@ -5,13 +5,13 @@
 Summary:	Riemann client library
 Summary(pl.UTF-8):	Biblioteka kliencka Riemann
 Name:		riemann-c-client
-Version:	1.10.2
+Version:	1.10.4
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
 #Source0Download: https://github.com/algernon/riemann-c-client/releases
 Source0:	https://github.com/algernon/riemann-c-client/archive/%{name}-%{version}.tar.gz
-# Source0-md5:	0bc0f9e8ee5d8274f91544086bd43a73
+# Source0-md5:	716a0385233b8fbcff13de1a5b4cea10
 Patch0:		%{name}-dep.patch
 URL:		https://github.com/algernon/riemann-c-client
 BuildRequires:	autoconf >= 2.50
