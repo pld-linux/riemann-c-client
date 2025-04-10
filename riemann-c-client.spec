@@ -63,7 +63,7 @@ Statyczna biblioteka riemann-client.
 
 %prep
 %setup -q -n %{name}-%{name}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
