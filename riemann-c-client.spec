@@ -5,15 +5,15 @@
 Summary:	Riemann client library
 Summary(pl.UTF-8):	Biblioteka kliencka Riemann
 Name:		riemann-c-client
-Version:	1.10.4
+Version:	1.10.5
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
-#Source0Download: https://github.com/algernon/riemann-c-client/releases
-Source0:	https://github.com/algernon/riemann-c-client/archive/%{name}-%{version}.tar.gz
-# Source0-md5:	716a0385233b8fbcff13de1a5b4cea10
+#Source0Download: https://git.madhouse-project.org/algernon/riemann-c-client/tags
+Source0:	https://git.madhouse-project.org/algernon/riemann-c-client/archive/%{name}-%{version}.tar.gz
+# Source0-md5:	20051fbb635f3385d288201cfec4badf
 Patch0:		%{name}-dep.patch
-URL:		https://github.com/algernon/riemann-c-client
+URL:		https://git.madhouse-project.org/algernon/riemann-c-client
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	check-devel
@@ -62,7 +62,7 @@ Static riemann-client library.
 Statyczna biblioteka riemann-client.
 
 %prep
-%setup -q -n %{name}-%{name}-%{version}
+%setup -q -n %{name}
 %patch -P0 -p1
 
 %build
